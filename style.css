@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Space+Mono:wght@700&display=swap');
+:root{
+        --mainbgc: hsl(222, 26%, 31%);
+        --togglebgc: hsl(223, 31%, 20%);
+        --scrbgc: hsl(224, 36%, 15%);
+        --keybgc: hsl(225, 21%, 49%);
+        --keyshadow: hsl(224, 28%, 35%);
+        --keybgctoggle: hsl(6, 63%, 50%);
+        --keyshadowred: hsl(6, 70%, 34%);
+        --keybgcorange: hsl(30, 25%, 89%);
+        --keyshadowOrange: hsl(28, 16%, 65%);
+        --textcol: hsl(221, 14%, 31%);
+
+
+          --mainbgc2:hsl(0, 0%, 90%);
+          --toglbgc_keypadbgc2: hsl(0, 5%, 81%);
+        --screenbgc2:hsl(0, 0%, 93%);
+        --keybgc2:hsl(185, 42%, 37%);
+        --keyshadow2:hsl(185, 58%, 25%);
+        --keybgc_tgl_orange:hsl(25, 98%, 40%);
+        --keysdworange:hsl(25, 99%, 27%);
+        --keybgcyellow2:hsl(45, 7%, 89%);
+        --keyshadowgreyorange: hsl(35, 11%, 61%);
+        --txt2:hsl(60, 10%, 19%);
+
+
+       --mainbgc3:hsl(268, 75%, 9%);
+       --tgl_keypadbgc_screenbgc:hsl(268, 71%, 12%);
+       --keybgc3:hsl(281, 89%, 26%);
+       --keyshadow3:hsl(285, 91%, 52%);
+       --keybgc_tgl3:hsl(176, 100%, 44%);
+       --keyshadowcyan3:hsl(177, 92%, 70%);
+       --keybgc_violet3:hsl(268, 47%, 21%);
+       --keyshadowviolet3:hsl(290, 70%, 36%);
+       --txtyellow3:hsl(52, 100%, 62%);
+    --txtblue3:hsl(198, 20%, 13%);
+
+
+}
+
+
+/*
+#### Backgrounds
+- Very dark violet (main background): hsl(268, 75%, 9%)
+- Very dark violet (toggle background, keypad background, screen background): hsl(268, 71%, 12%)
+#### Keys
+-Dark violet (key background): hsl(281, 89%, 26%)
+- Vivid magenta (key shadow): hsl(285, 91%, 52%)
+- Pure cyan (key background, toggle): hsl(176, 100%, 44%)
+- Soft cyan (key shadow): hsl(177, 92%, 70%)
+- Very dark violet (key background): hsl(268, 47%, 21%)
+- Dark magenta (key shadow): hsl(290, 70%, 36%)
+
+#### Text - Light yellow: hsl(52, 100%, 62%)
+- Very dark blue: hsl(198, 20%, 13%)
+- White (text): hsl(0, 0, 100%) */
+
+
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 100px auto ;
+   font-family: 'League Spartan',sans-serif;
+  }
+.calc
+{
+     max-width: 480px;
+}
+
+.top {
+    /* font-size: 32px; */
+    font-family: 'League Spartan',sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+h1{
+    margin-bottom: 0;
+}
+.right
+{
+    display: flex;
+}
+.theme {
+    align-self: flex-end;
+}
+.buttonsbox
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 10px;
+}
+.btnlabel
+{
+    padding-left: 7px;
+    letter-spacing: 7.5px;
+}
+.btns{
+background-color: var(--toglbgc_keypadbgc2);
+padding: 4px 7px;
+border-radius: 20px;
+}
+.b1,.b2,.b3{
+    cursor: pointer;
+    border: none;
+    height: 15px;
+    width: 15px;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.b2,.b3{
+    opacity: 0;
+}
+
+.display
+{
+    height: 80px;
+    margin-top: 20px ;
+    margin-bottom:20px ;
+    border-radius: 7px;
+    text-align: end ;
+    padding-top: 50px;
+    padding-right: 20px;
+    font-size: 50px;
+}
+
+.keyboard {
+    border-radius: 7px;
+    height: 370px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.smallkeys{
+   width: 85px;
+   height: 50px;
+   margin: 10px;
+   border: none;
+   border-radius: 7px;
+font-family: 'League Spartan', sans-serif;
+font-size: 32px;
+padding-top: 10px;
+cursor: pointer;
+}
+
+.twokeys
+{
+   width: 190px;
+   height: 50px;
+   margin: 10px 10px;
+   border: none;
+border-radius: 7px;
+font-family: 'League Spartan', sans-serif;
+font-size: 32px;
+cursor: pointer;
+}
+
+
+
+
+.calc0 {
+background-color: var(--mainbgc);
+}
+
+.top0{
+    color: white;
+}
+
+.display0 {
+background-color: var(--scrbgc);
+    color: white;
+}
+
+.keyboard0 {
+    background-color: var(--togglebgc);
+}
+
+.body0 {
+background-color: var(--mainbgc);
+}
+
+.smallkeys0 {
+    background-color: var(--keybgcorange);
+border-bottom: 3px solid var(--keyshadowOrange);
+    color: var(--textcol);
+}
+
+.twokeys0 {
+color: white;
+}
+
+.del0,.reset0 {
+    background-color: var(--keybgc);
+    color: white;
+    border-bottom: 3px solid var(--keyshadow);
+}
+
+.equal0 {
+    background-color: var(--keybgctoggle);
+}
+
+.btns0{
+    background-color: var(--togglebgc);
+}
+
+
+
+.calc1
+{
+background-color: var(--mainbgc2);
+}
+.top1
+{
+   color: var(--txt2);
+}
+.display1{
+    background-color: var(--screenbgc2);
+        color: var(--txt2);
+}
+.keyboard1{
+        background-color: var(--toglbgc_keypadbgc2);
+}
+.body1{
+    background-color: var(--mainbgc2);
+}
+.smallkeys1
+{
+        background-color: var(--keybgcyellow2);
+        border-bottom: 3px solid var(--keyshadowgreyorange);
+        color: var(--txt2);
+}
+.twokeys1
+{
+        color: var(--txt2);
+}
+.del1,.reset1 {
+    background-color: var(--keybgc2);
+    color: white;
+    border-bottom: 3px solid var(--keyshadow2);
+}
+
+.equal1 {
+    background-color: var(--keybgc_tgl_orange);
+    color: white;
+}
+.btns1 {
+    background-color: var(--toglbgc_keypadbgc2);
+}
+
+
+
+.calc2 {
+    background-color: var(--mainbgc3);
+}
+
+.top2 {
+    color: var(--txtyellow3);
+}
+
+.display2 {
+    background-color: var(--tgl_keypadbgc_screenbgc);
+    color: var(--txtyellow3);
+}
+
+.keyboard2 {
+    background-color: var(--tgl_keypadbgc_screenbgc);
+}
+
+.body2 {
+    background-color: var(--mainbgc3);
+}
+
+.smallkeys2 {
+    background-color: var(--keybgc_violet3);
+    border-bottom: 3px solid var(--keyshadowviolet3);
+    color: var(--txtyellow3);
+}
+
+.del2,
+.reset2 {
+    background-color: var(--keybgc3);
+    color: white;
+    border-bottom: 3px solid var(--keyshadow3);
+}
+
+.equal2 {
+    background-color: var(--keybgc_tgl3);
+    color: var(--txtblue3);
+    border-bottom: 3px solid var(--keyshadowcyan3);
+}
+
+.btns2 {
+    background-color: var(--tgl_keypadbgc_screenbgc);
+}
+
